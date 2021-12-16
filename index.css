@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "main";
+}
+
+.mainHeader {
+  grid-area: header;
+  height: 10vh;
+  padding-left: 10px;
+  background-color: #a67341;
+  color: white;
+}
+
+.hambugerButton {
+  display: none;
+}
+@media only screen and (max-width: 521px) {
+  .headerItemMobileHide {
+    display: none;
+  }
+
+  .headerItemMobileHide a {
+    display: none;
+  }
+
+  .hambugerButton {
+    display: block;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+  }
+}
+.dropDown {
+  opacity: 0;
+  visibility: hidden;
+  width: 100px;
+  position: fixed;
+  background-color: white;
+  gap: 10px;
+  right: 0;
+}
+
+.hambugerButton:focus-within .dropDown {
+  opacity: 1;
+  visibility: visible;
+  color: black;
+  width: 100px;
+  position: fixed;
+  background-color: white;
+  gap: 10px;
+  right: 0;
+  padding: 10px;
+}
+
+.mainBody {
+  grid-area: main;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.mainBody .mainBodyContent {
+  flex: 1;
+  /* display: flex; */
+}
+
+.mainBody footer {
+  background-color: black;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.banner {
+  height: 60vh;
+  color: white;
+}
+.bannerButton {
+  padding: 8px;
+  background-color: #a67341;
+  color: white;
+  border-radius: 6px;
+}
+.gridDisplay {
+  display: grid;
+}
+.placeItemsCenter {
+  place-items: center;
+}
+
+footer {
+  color: white;
+  padding: 20px 0px 20px 0px;
+  margin-top: 10vh;
+  /* display: flex; */
+}
+.readMoreButton {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+}
+
+/* index  start*/
+.indexBanner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.indexImage {
+  background-image: url("./assets/images/roberto-nickson-396152\ 1.png");
+}
+
+.meseumCardContainer {
+  display: grid;
+  grid-template-columns: 4fr 2fr 4fr;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 985px) {
+  .meseumMobileHide {
+    display: none;
+  }
+
+  .meseumCardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .meseumMobileShow {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 985px) {
+  .meseumMobileShow {
+    display: none;
+  }
+}
+.meseumCard {
+  height: 400px;
+}
+.meseumCardBackImage {
+  background-image: url("./assets/images/meseum-main.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.exploreContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  gap: 20px;
+  justify-content: space-around;
+}
+
+
+.exploreCards img {
+  width: 100%;
+}
+
+/* index  end*/
+
+/* aboutus  start*/
+
+.aboutUsBannerImage {
+  background-image: url("./assets/images/scott-webb-102825\ 1.png");
+}
+
+.aboutOpenContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #3576F4;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.aboutOpenContainer ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;   
+    list-style-type: none; 
+}
+
+
+
+.adminSection{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+
+}
+
+@media  only screen and (max-width: 900px) {
+    .adminSection{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    
+}
+.admissionList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+
+}
+
+.admissionList li{
+    text-align: center;
+
+}
+
+.aboutCards div{
+color: white;
+text-align: center;
+padding: 5px;
+background-color: black;
+margin-bottom: 20px;
+}
+.aboutCards img{
+    width: 100%;
+}
+/* aboutus  end*/

@@ -1,0 +1,46 @@
+
+/* explore start */
+.exploreBanner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    background-color: #77776D;
+    
+   }
+   
+   .eventBannerTextArea{
+     padding: 10px;
+   }
+   .eventBannerTextArea h1{
+     font-size: 2rem; max-width: 600px
+   
+   }
+   .eventBannerTextArea p{
+    max-width: 650px
+   }
+   
+   .dinosourContainer{
+     width: 30%;
+     min-width: 200px;
+    
+   }
+   
+   .exploreBannerTextContainer{
+     width: 60%;
+     min-width: 300px;
+     color: white;
+     padding: 10px;
+     gap: 20px;
+   
+   }
+   .exploreBannerTextContainer > h3{
+     font-size: 30px; max-width: 500px
+   }
+   
+   
+   
+  
+   
+   
+   /* explore end */
+   

@@ -1,0 +1,38 @@
+/* getInvolved  start*/
+
+.getInvoledBanner{
+    background-image: url('./assets/images/getinvolvedbanner.png');
+    display: flex;
+  }
+  
+  .getInvoledBanner div{
+    padding: 10px;
+    margin: auto;
+  }
+  
+  .getInvolvedForm input{
+    padding: auto;
+    width: 300px;
+    height: 30px;
+  }
+  
+  .getInvolvedForm textarea{
+    width: 300px;
+  }
+  .getInvolvedForm div{
+    padding: 10px;
+  }
+  
+  .getInvolvedForm >div >p {
+    color: white;
+  }
+  
+  .getInvoledBannerTextArea > h1{
+    font-size: 2rem; max-width: 600px
+  }
+  
+  .getInvoledBannerTextArea > p{
+    max-width: 650px
+  }
+  /* getInvolvedEnd */
+  

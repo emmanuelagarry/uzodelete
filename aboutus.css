@@ -1,0 +1,87 @@
+/* aboutus  start*/
+
+.aboutUsBannerImage {
+    background-image: url("./assets/images/scott-webb-102825\ 1.png");
+  }
+  
+  
+  
+  .aboutOpenContainer{
+      display: flex;
+      flex-direction: column;
+      background-color: #3576F4;
+      color: white;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+  
+  .aboutOpenContainer ul{
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      gap: 10px;   
+      list-style-type: none; 
+  }
+  
+  
+  
+  .adminSection{
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 4fr 2fr;
+  
+  }
+  
+  @media  only screen and (max-width: 900px) {
+      .adminSection{
+          display: flex;
+          flex-direction: column;
+  
+      }
+  
+      
+  }
+  .admissionList{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: white;
+  
+  }
+  
+  .admissionList li{
+      text-align: center;
+  
+  }
+  
+  .aboutCards div{
+  color: white;
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  margin-bottom: 20px;
+  }
+  .aboutCards img{
+      width: 100%;
+  }
+  
+  .aboutUsAdminList{
+    padding: 20px;
+    background-color: #32825e;
+    display: grid;
+    place-items: center
+  }
+  .adminSection > div > image{
+    width: 100%; height: 100%
+  }
+  
+  .adminSectionHeader{
+    color: #32825e; text-align: center
+  }
+  .aboutUsBannerTextArea >  h3 {
+    font-size: 30px; max-width: 500px; text-align: center
+  }
+  /* aboutus  end*/
+  
+  

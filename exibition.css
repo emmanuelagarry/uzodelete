@@ -1,0 +1,68 @@
+
+
+
+
+/* exhibition start */
+
+.exhibitionBannerImage{
+    background-image: url('./assets/images/Exhibitionbanner.png');
+  
+    
+  
+  }
+  .exhibitionbannertoolBar{
+    background-color: #333333;
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 10px;
+  }
+  
+  .exhibitionbannertoolBar div{
+   
+    width: 220px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+  }
+  
+  .exhibitionBannerTextContainer{
+    padding: 10px
+  }
+  .exhibitionBannerTextContainer > h1{
+    font-size: 2rem; max-width: 600px
+  }
+  .exhibitionBannerTextContainer p{
+    max-width: 650px
+  }
+  
+  .eventSearch input{
+    width: 100%;
+    min-width: 250px;
+    max-width: 500px;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding: 0px;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px ;
+    
+  }
+  .eventSearch button{
+    height: 30px;
+    width: 50px;
+    background-color: #3576F4;
+    border-top-right-radius: 5px;
+    color: white;
+    border-bottom-right-radius: 5px
+  
+  }
+  
+  /*  exhibition end */
+  
+  
+  

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uzo</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./aboutus.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -14,11 +15,11 @@
   <body>
     <main class="mainContainer">
       <header class="mainHeader row spaceBetween alignCenter">
-        <a><img src="./assets/images/icon-1719742 1.png" width="40px" /></a>
+        <a><img src="./assets/images/icon-1719742 1.png" width="50px" /></a>
 
         <nav
-          class="row spaceAround alignCenter headerItemMobileHide"
-          style="flex: 1; max-width: 500px"
+          class="row spaceAround alignCenter headerItemMobileHide navHeaderMobile"
+          
         >
           <a>Home</a>
 
@@ -59,14 +60,14 @@
               placeItemsCenter
             "
           >
-            <div>
-              <h3 style="font-size: 30px; max-width: 500px; text-align: center">
-                ABOUT <span style="color: #ff8c1a">COMMUNITY</span> SCIENCE
+            <div class="aboutUsBannerTextArea">
+              <h3>
+                ABOUT <span class="brownColor">COMMUNITY</span> SCIENCE
                 MUSEUM
               </h3>
               <br />
               <br />
-              <button class="bannerButton row alignCenter" style="gap: 10px">
+              <button class="bannerButton row alignCenter tenpxGap">
                 <p>Read more</p>
                 <span class="material-icons"> east </span>
               </button>
@@ -74,7 +75,7 @@
           </section>
 
           <section class="aboutOpenContainer">
-            <h3 style="text-align: center">OPENING HOURS</h3>
+            <h3 class="textAlignCenter">OPENING HOURS</h3>
             <ul class="row">
               <li>Monday: Closed</li>
               <li>Tuesday: 10:00-16:00</li>
@@ -85,7 +86,7 @@
               <li>Sunday: 11:00-13:00</li>
             </ul>
           </section>
-          <p style="text-align: center">
+          <p class="textAlignCenter">
             Come join us at the Community Science Museum where we’re commit
             making science accessible to all. Over the course of human history,
             science has developed from our early understanding of fire, wind,
@@ -104,23 +105,19 @@
 
           <br />
 
-          <h2 style="color: #32825e; text-align: center">Admission Section</h2>
+          <h2  class="adminSectionHeader">Admission Section</h2>
           <br />
 
           <section class="adminSection">
             <div>
               <img
                 src="./assets/images/Rectangle 231.png"
-                style="width: 100%; height: 100%"
+             
               />
             </div>
             <div
-              style="
-                padding: 20px;
-                background-color: #32825e;
-                display: grid;
-                place-items: center;
-              "
+            class="aboutUsAdminList"
+             
             >
               <ul class="admissionList">
                 <li>Our Museum is located at Frognerveien 67, 0266 Oslo.</li>
@@ -173,13 +170,13 @@
 
         <footer>
           <div class="row spaceAround">
-            <section class="column" style="gap: 10px">
+            <section class="column tenpxGap">
               <h3>Contact Us</h3>
               <p>+4747960268</p>
               <p>Nsebo@gmail.com</p>
               <p>Mitchelet veien 36</p>
             </section>
-            <section class="column" style="gap: 10px">
+            <section class="column tenpxGap">
               <h3>Sitemap</h3>
               <p>Home</p>
               <p>Explore</p>
@@ -188,9 +185,9 @@
               <p>Visit</p>
               <p>Get Involved</p>
             </section>
-            <section class="column" style="gap: 10px">
+            <section class="column tenpxGap">
               <h3>Follow Us</h3>
-              <div class="row" style="gap: 10px">
+              <div class="row tenpxGap">
                 <img src="./assets/images/Group.png" width="20px" />
                 <img src="./assets/images/Group (1).png" width="20px" />
                 <img src="./assets/images/Vector (1).png" width="19px" />
@@ -204,7 +201,7 @@
           <br />
           <br />
 
-          <p style="text-align: center">
+          <p class="textAlignCenter">
             Copyright 2021 All Right Reserved Community Science Museum
           </p>
           <br />
